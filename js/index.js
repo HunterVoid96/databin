@@ -4,8 +4,12 @@ $(document).on("pagecreate","#pageone", function () {
  
  	//bind the view and model together
 	var personView1 = new PersonView({model: person1});
+	var personView2 = new PersonView({model: person2});
+	var personView3 = new PersonView({model: person3});
 	
 	//how will you display additional people?
+	//create more variables (views), possible array or loop could be used
+	
 	
  
 });
@@ -43,7 +47,7 @@ var PersonView = Backbone.View.extend({
 
 //create some people using the model
 var person1 = new Person({name: 'John Smith', gender: 'm', dob: '12/05/1981'});
-var person2 //... create some more
-var person3
+var person2 = new Person({name: 'Ben Smith', gender: 'm', dob: '18/03/1991'}); //... create some more
+var person3 = new Person({name: 'Amy Smith', gender: 'f', dob: '12/10/1996'});
 
 
